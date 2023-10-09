@@ -1,0 +1,14 @@
+{
+    "files.associations": {
+        "*.tcc": "cpp",
+        "random": "cpp",
+        "algorithm": "cpp",
+        "fstream": "cpp",
+        "functional": "cpp",
+        "vector": "cpp",
+        "xhash": "cpp",
+        "xlocale": "cpp",
+        "xutility": "cpp"
+    },
+    "cmake.sourceDirectory": "${workspaceFolder}/src/source"
+}

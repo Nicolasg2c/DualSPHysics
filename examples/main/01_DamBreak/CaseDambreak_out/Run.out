@@ -1,0 +1,149 @@
+
+
+ <DUALSPHYSICS5> Copyright (c) 2020 by
+ Dr Jose M. Dominguez Alonso, Dr Alejandro Crespo,
+ Prof. Moncho Gomez Gesteira, Prof. Benedict Rogers,
+ Dr Georgios Fourtakas, Prof. Peter Stansby,
+ Dr Renato Vacondio, Dr Corrado Altomare, Dr Angelo Tafuni,
+ Orlando Garcia Feal, Ivan Martinez Estevez
+
+ EPHYSLAB Environmental Physics Laboratory, Universidade de Vigo
+ School of Mechanical, Aerospace and Civil Engineering, University of Manchester
+
+ DualSPHysics is free software: you can redistribute it and/or
+ modify it under the terms of the GNU Lesser General Public License
+ as published by the Free Software Foundation, either version 2.1 of
+ the License, or (at your option) any later version.
+
+ DualSPHysics is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ GNU Lesser General Public License for more details.
+
+ You should have received a copy of the GNU Lesser General Public License
+ along with DualSPHysics. If not, see <http://www.gnu.org/licenses/>.
+
+
+DualSPHysics5 v5.0.140 (18-07-2020)
+====================================
+Threads by host for parallel execution: 8
+[Initialising JSphCpuSingle  27-06-2022 19:09:32]
+ProgramFile=".../bin/windows/DualSPHysics5.0CPU_win64.exe"
+ExecutionDir=".../examples/main/01_DamBreak"
+XmlFile=".../01_DamBreak/CaseDambreak_out/CaseDambreak.xml"
+OutputDir=".../main/01_DamBreak/CaseDambreak_out"
+OutputDataDir=".../01_DamBreak/CaseDambreak_out/data"
+XML-Vars (uservars + ctes): CaseName=["CaseDambreak"]  Data2D=[0]  Data2DPosy=[0]  H=[0.0147224]  KernelSize=[0.0294449]  B=[162005]  Gamma=[7]  Rhop0=[1000]  Dp=[0.0085]  Gravity_x=[0]  Gravity_y=[0]  Gravity_z=[-9.81]  MassFluid=[0.000614125]  MassBound=[0.000614125]
+XML-Vars (parameters): TimeMax=[1.6]  TimeOut=[0.01]
+**Basic case configuration is loaded
+**Special case configuration is loaded
+Loading initial state of particles...
+Loaded particles: 171496
+MapRealPos(border)=(0.000263878,0.000263878,0.000263878)-(1.59974,0.673236,0.452236)
+MapRealPos(final)=(0.000263878,0.000263878,0.000263878)-(1.59974,0.673236,0.678222)
+**Initial state of particles is loaded
+**3D-Simulation parameters:
+CaseName="CaseDambreak"
+RunName="CaseDambreak"
+Symmetry=False
+SavePosDouble=False
+SaveFtAce=False
+SvTimers=True
+PIPS-steps=100
+Boundary="DBC"
+StepAlgorithm="Verlet"
+  VerletSteps=40
+Kernel="CubicSpline"
+  Cubic.a1=0.318310
+  Cubic.aa=6775352.500000
+  Cubic.a24=24937.416016
+  Cubic.c1=-20326058.000000
+  Cubic.c2=-5081514.500000
+  Cubic.d1=15244543.000000
+  Cubic.od_wdeltap=0.000018
+Viscosity="Artificial"
+  Visco=0.100000
+  ViscoBoundFactor=1.000000
+DensityDiffusion="Fourtakas et al 2019 (inner)"
+  DensityDiffusionValue=0.100000
+Shifting="None"
+RigidAlgorithm="None"
+FloatingCount=0
+CaseNp=171496
+CaseNbound=43186
+CaseNfixed=43186
+CaseNmoving=0
+CaseNfloat=0
+CaseNfluid=128310
+PeriodicActive="None"
+Dp=0.0085
+KernelH=0.014722  (CoefficientH=1; H/Dp=1.73205)
+KernelSize=0.029445
+CteB=162005.140625
+Gamma=7.000000
+RhopZero=1000.000000
+Cs0=33.6755
+CFLnumber=0.200000
+DtIni=0.000437186
+DtMin=2.18593e-05
+DtAllParticles=False
+MassFluid=0.000614
+MassBound=0.000614
+TimeMax=1.6
+TimePart=0.01
+Gravity=(0.000000,0.000000,-9.810000)
+NpMinimum=43186
+RhopOut=True
+RhopOutMin=700.000000
+RhopOutMax=1300.000000
+WrnPartsOut=True
+**Requested CPU memory for 171624 particles: 22.3 MB.
+CellMode="Full"
+ScellDiv=1
+MapCells=(55,23,24)
+DomCells=(55,23,24)
+DomCellCode="13_10_10"
+**CellDiv: Requested cpu memory for 180198 particles: 5.5 MB.
+**CellDiv: Requested cpu memory for 4992 cells (CellMode=Full): 0.1 MB.
+ 
+RunMode="Pos-Double - OpenMP(Threads:8)"
+ 
+Particle summary:
+  Fixed....: 43186  id:(0-43185)   MKs:3 (10-11,20)
+  Moving...: 0
+  Floating.: 0
+  Fluid....: 128310  id:(43186-171495)   MKs:1 (1)
+
+Total particles: 171496 (bound=43186 (fx=43186 mv=0 ft=0) fluid=128310)
+Total MK blocks: 4 (bound=3 (fx=3 mv=0 ft=0) fluid=1)
+ 
+
+*** WARNING: The kernel Cubic Spline is not available in GaugeSystem, so kernel Wendland is used.
+
+Allocated memory in CPU: 29233196 (27.88 MB)
+Part_0000        171496 particles successfully stored
+
+[WARNINGS]
+1. The kernel Cubic Spline is not available in GaugeSystem, so kernel Wendland is used.
+
+[Initialising simulation (a0phvzlc)  27-06-2022 19:09:32]
+PART       PartTime      TotalSteps    Steps    Time/Sec   Finish time        
+=========  ============  ============  =======  =========  ===================
+  Progress 0.41% in 30.2s. Estimated finish time: 27-06-2022 21:12:59
+Part_0001      0.010086           116      116    4725.20  27-06-2022 21:15:31
+Part_0002      0.020045           231      115    5452.94  27-06-2022 21:25:10
+Part_0003      0.030051           347      116    5354.34  27-06-2022 21:27:32
+Part_0004      0.040062           463      116    5141.83  27-06-2022 21:27:19
+Part_0005      0.050050           579      116    4821.99  27-06-2022 21:25:29
+Part_0006      0.060079           696      117    4840.52  27-06-2022 21:24:20
+Part_0007      0.070082           813      117    5051.84  27-06-2022 21:24:19
+Part_0008      0.080050           930      117    5399.60  27-06-2022 21:25:28
+Part_0009      0.090017          1047      117    5373.05  27-06-2022 21:26:16
+Part_0010      0.100012          1167      120    5358.08  27-06-2022 21:26:53
+Part_0011      0.110072          1289      122    6100.52  27-06-2022 21:29:12
+Part_0012      0.120041          1408      119    5736.38  27-06-2022 21:30:19
+**CellDiv: Requested cpu memory for 6048 cells (CellMode=Full): 0.1 MB.
+Part_0013      0.130009          1529      121    5939.96  27-06-2022 21:31:40
+Part_0014      0.140083          1651      122    5804.45  27-06-2022 21:32:34
+Part_0015      0.150051          1771      120    6000.63  27-06-2022 21:33:42
+Part_0016      0.160034          1891      120    6075.78  27-06-2022 21:34:49

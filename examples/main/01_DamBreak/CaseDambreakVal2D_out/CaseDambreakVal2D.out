@@ -1,0 +1,119 @@
+
+
+ <GENCASE>  Copyright (c) 2020 by Dr Jose M. Dominguez
+ All rights reserved.
+
+ DualSPHysics is an international collaboration between University of Vigo 
+ (Spain) and University of Manchester (UK). 
+
+ Redistribution and use in source and binary forms, with or without
+ modification, are permitted provided that the following conditions
+ are met:
+ * Redistributions of source code must retain the above copyright
+   notice, this list of conditions and the following disclaimer.
+ * Redistributions in binary form must reproduce the above copyright
+   notice, this list of conditions and the following disclaimer in the
+   documentation and/or other materials provided with the distribution.
+ * Neither the name of the DualSPHysics nor the names of its contributors
+   may be used to endorse or promote products derived from this software
+   without specific prior written permission.
+
+ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+ AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+ IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+ ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER BE LIABLE FOR ANY
+ DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+ (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+ LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND
+ ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+ (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF
+ THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE. 
+
+
+GenCase v5.0.197 (18-07-2020) 
+===============================
+OmpThreads: 8
+
+[LoadXMLInit]
+List: MAIN
+
+Total operations: 5
+[LoadXMLInit-End  time:0.022s]
+
+[Draw]
+List of available variables: Gravity_x=[0]  Gravity_y=[0]  Gravity_z=[-9.81]  Rhop0=[1000]  Dp=[0.01]  PosMin_x=[-1]  PosMin_y=[0]  PosMin_z=[-1]  PosMax_x=[4.5]  PosMax_y=[0]  PosMax_z=[3.5]  CaseName=["CaseDambreakVal2D"]  Data2D=[1]  Data2DPosy=[0]  H=[0.0141421]  MassBound=[0.1]  MassFluid=[0.1]
+
+Mk size: 1 bytes
+Case limits: (-1,0,-1) - (4.5,0,3.5)
+Distance between points: 0.01
+Case domain: (0,0,0)-(549,0,449)
+Domain points: 550 x 1 x 450 = 247500
+Case parts: 1 x 450z
+Memory: 0.00Gb 0.24Mb (247500)
+
+> MAIN
+<MAIN (Operations= 3+2+0 = 5)
+
+Triangles: 26 (0 ignored)
+[Draw-End  time:0.019s]
+
+[LoadsXMLConfig]
+Execution parameters.
+Initials configuration.
+Floating bodies configuration.
+Properties configuration.
+Predefined motion configuration.
+[LoadsXMLConfig-End  time:0.011s]
+
+[PreparePoints]
+Computing Vtk-Cells data...  (time:0.004s)
+BitSizeTot: 20 (1 + 9+1+9)
+Points loaded: 21001
+Sorting points by Z...
+Sorting points by Mk...
+
+List of Points:
+Points -> Fixed-Boundary particles:
+  block[  0] (mk: 10):   1001  -->    1001
+Points -> Fluid particles:
+  block[  1] (mk:  1):  20000  -->   20000
+
+Particle summary:
+  Fixed....: 1001  id:(0-1000)   MKs:1 (10)
+  Moving...: 0
+  Floating.: 0
+  Fluid....: 20000  id:(1001-21000)   MKs:1 (1)
+
+Total particles: 21001 (bound=1001 (fx=1001 mv=0 ft=0) fluid=20000)
+Total MK blocks: 2 (bound=1 (fx=1 mv=0 ft=0) fluid=1)
+
+Maximum depth: 1.99 (automatic)
+Speed of system: 4.41836 (automatic)
+Speed of sound: max(coefsound*speedsystem,10*sqrt(g*depth))
+Speed of sound: 88.3672 max(88.3672,44.1836)
+Speed of sound: 88.3672 (automatic)
+
+Coefh:1.000000 (hdp:1.414214)
+
+[PreparePoints-End  time:0.047s]
+
+[SaveCase2D]
+CaseDambreakVal2D_out/CaseDambreakVal2D_MkCells.vtk  (time:0.001s, shapes:4, points:16)
+CaseDambreakVal2D_out/CaseDambreakVal2D.bi4<double>  (time:0.005s)
+CaseDambreakVal2D_out/CaseDambreakVal2D_All.vtk  (time: 0.007s)
+CaseDambreakVal2D_out/CaseDambreakVal2D_Bound.vtk  (time: 0.004s)
+CaseDambreakVal2D_out/CaseDambreakVal2D_Fluid.vtk  (time: 0.008s)
+CaseDambreakVal2D_out/CaseDambreakVal2D.xml  (time:0.028s)
+
+Save files time: 0.053s
+
+Particle limits:
+  X range: 0 to 4 [m]
+  Y range: 0 to 0 [m]
+  Z range: 0 to 3 [m]
+
+[SaveCase2D-End  time:0.071s]
+
+
+Finished execution (code=0).
+

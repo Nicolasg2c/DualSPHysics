@@ -1,0 +1,1 @@
+﻿C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\BuildCustomizations\CUDA 9.2.targets(536,9): error : The CUDA Toolkit v9.2 directory 'D:\x64\CUDA\9.2\Devtools\' does not exist.  Please verify the CUDA Toolkit is installed properly or define the CudaToolkitDir property to resolve this error.

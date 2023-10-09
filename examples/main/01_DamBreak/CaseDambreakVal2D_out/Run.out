@@ -1,0 +1,140 @@
+
+
+ <DUALSPHYSICS5> Copyright (c) 2020 by
+ Dr Jose M. Dominguez Alonso, Dr Alejandro Crespo,
+ Prof. Moncho Gomez Gesteira, Prof. Benedict Rogers,
+ Dr Georgios Fourtakas, Prof. Peter Stansby,
+ Dr Renato Vacondio, Dr Corrado Altomare, Dr Angelo Tafuni,
+ Orlando Garcia Feal, Ivan Martinez Estevez
+
+ EPHYSLAB Environmental Physics Laboratory, Universidade de Vigo
+ School of Mechanical, Aerospace and Civil Engineering, University of Manchester
+
+ DualSPHysics is free software: you can redistribute it and/or
+ modify it under the terms of the GNU Lesser General Public License
+ as published by the Free Software Foundation, either version 2.1 of
+ the License, or (at your option) any later version.
+
+ DualSPHysics is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ GNU Lesser General Public License for more details.
+
+ You should have received a copy of the GNU Lesser General Public License
+ along with DualSPHysics. If not, see <http://www.gnu.org/licenses/>.
+
+
+DualSPHysics5 v5.0.140 (18-07-2020)
+====================================
+Threads by host for parallel execution: 8
+[Initialising JSphCpuSingle  21-06-2022 22:31:45]
+ProgramFile=".../bin/windows/DualSPHysics5.0CPU_win64.exe"
+ExecutionDir=".../examples/main/01_DamBreak"
+XmlFile=".../01_DamBreak/CaseDambreakVal2D_out/CaseDambreakVal2D.xml"
+OutputDir=".../main/01_DamBreak/CaseDambreakVal2D_out"
+OutputDataDir=".../01_DamBreak/CaseDambreakVal2D_out/data"
+XML-Vars (uservars + ctes): CaseName=["CaseDambreakVal2D"]  Data2D=[1]  Data2DPosy=[0]  H=[0.0141421]  KernelSize=[0.0282843]  B=[1.11554e+06]  Gamma=[7]  Rhop0=[1000]  Dp=[0.01]  Gravity_x=[0]  Gravity_y=[0]  Gravity_z=[-9.81]  MassFluid=[0.1]  MassBound=[0.1]
+XML-Vars (parameters): TimeMax=[2]  TimeOut=[0.01]
+**Basic case configuration is loaded
+**Special case configuration is loaded
+Loading initial state of particles...
+Loaded particles: 21001
+MapRealPos(border)=(-0.000707107,-0.000707107,-0.000707107)-(4.00071,0.000707107,3.00071)
+MapRealPos(final)=(-0.000707107,-0.000707107,-0.000707107)-(4.00071,0.000707107,4.50141)
+**Initial state of particles is loaded
+**2D-Simulation parameters:
+CaseName="CaseDambreakVal2D"
+RunName="CaseDambreakVal2D"
+Simulate2DPosY=0
+Symmetry=False
+SavePosDouble=False
+SaveFtAce=False
+SvTimers=True
+PIPS-steps=100
+Boundary="DBC"
+StepAlgorithm="Verlet"
+  VerletSteps=40
+Kernel="Wendland"
+  Wendland.awen=2784.999756
+  Wendland.bwen=-984716.812500
+Viscosity="Artificial"
+  Visco=0.020000
+  ViscoBoundFactor=1.000000
+DensityDiffusion="Fourtakas et al 2019 (inner)"
+  DensityDiffusionValue=0.100000
+Shifting="None"
+RigidAlgorithm="None"
+FloatingCount=0
+CaseNp=21001
+CaseNbound=1001
+CaseNfixed=1001
+CaseNmoving=0
+CaseNfloat=0
+CaseNfluid=20000
+PeriodicActive="None"
+Dp=0.01
+KernelH=0.014142  (CoefficientH=1; H/Dp=1.41421)
+KernelSize=0.028284
+CteB=1115537.125000
+Gamma=7.000000
+RhopZero=1000.000000
+Cs0=88.3672
+CFLnumber=0.200000
+DtIni=0.000160038
+DtMin=8.00192e-06
+DtAllParticles=False
+MassFluid=0.100000
+MassBound=0.100000
+TimeMax=2
+TimePart=0.01
+Gravity=(0.000000,0.000000,-9.810000)
+NpMinimum=1001
+RhopOut=True
+RhopOutMin=700.000000
+RhopOutMax=1300.000000
+WrnPartsOut=True
+**Requested CPU memory for 21129 particles: 2.7 MB.
+CellMode="Full"
+ScellDiv=1
+MapCells=(142,1,160)
+DomCells=(142,1,160)
+DomCellCode="14_7_12"
+**CellDiv: Requested cpu memory for 22179 particles: 0.7 MB.
+**CellDiv: Requested cpu memory for 5548 cells (CellMode=Full): 0.1 MB.
+ 
+RunMode="Pos-Double - OpenMP(Threads:8)"
+ 
+Particle summary:
+  Fixed....: 1001  id:(0-1000)   MKs:1 (10)
+  Moving...: 0
+  Floating.: 0
+  Fluid....: 20000  id:(1001-21000)   MKs:1 (1)
+
+Total particles: 21001 (bound=1001 (fx=1001 mv=0 ft=0) fluid=20000)
+Total MK blocks: 2 (bound=1 (fx=1 mv=0 ft=0) fluid=1)
+ 
+GaugeSystem configuration:
+Guage_0: 'Swl_x02'
+  Type.......: SWL
+  Compute....: 0 - 2   dt:0.01
+  Output.....: 0 - 2   dt:0.01
+  SaveVtkPart: True
+  MassLimit..: 0.04
+  GaugePoints: (0.2,0,-0.05)-(0.2,0,2.1)
+  PointDp....: 0.005
+Guage_1: 'Swl_z003'
+  Type.......: SWL
+  Compute....: 0 - 2   dt:0.005
+  Output.....: 0 - 2   dt:0.005
+  SaveVtkPart: True
+  MassLimit..: 0.04
+  GaugePoints: (-0.05,0,0.03)-(4.05,0,0.03)
+  PointDp....: 0.005
+ 
+Allocated memory in CPU: 3718164 (3.55 MB)
+Part_0000        21001 particles successfully stored
+
+[Initialising simulation (uni99t3v)  21-06-2022 22:31:45]
+PART       PartTime      TotalSteps    Steps    Time/Sec   Finish time        
+=========  ============  ============  =======  =========  ===================
+Part_0001      0.010016           314      314     494.50  21-06-2022 22:48:14

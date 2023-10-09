@@ -1,0 +1,123 @@
+
+
+ <GENCASE>  Copyright (c) 2020 by Dr Jose M. Dominguez
+ All rights reserved.
+
+ DualSPHysics is an international collaboration between University of Vigo 
+ (Spain) and University of Manchester (UK). 
+
+ Redistribution and use in source and binary forms, with or without
+ modification, are permitted provided that the following conditions
+ are met:
+ * Redistributions of source code must retain the above copyright
+   notice, this list of conditions and the following disclaimer.
+ * Redistributions in binary form must reproduce the above copyright
+   notice, this list of conditions and the following disclaimer in the
+   documentation and/or other materials provided with the distribution.
+ * Neither the name of the DualSPHysics nor the names of its contributors
+   may be used to endorse or promote products derived from this software
+   without specific prior written permission.
+
+ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+ AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+ IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+ ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER BE LIABLE FOR ANY
+ DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+ (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+ LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND
+ ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+ (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF
+ THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE. 
+
+
+GenCase v5.0.197 (18-07-2020) 
+===============================
+OmpThreads: 8
+
+[LoadXMLInit]
+List: MAIN
+
+Total operations: 14
+[LoadXMLInit-End  time:0.001s]
+
+[Draw]
+List of available variables: Gravity_x=[0]  Gravity_y=[0]  Gravity_z=[-9.81]  Rhop0=[1000]  Dp=[0.0085]  PosMin_x=[-0.05]  PosMin_y=[-0.05]  PosMin_z=[-0.05]  PosMax_x=[2]  PosMax_y=[1]  PosMax_z=[1]  CaseName=["CaseDambreak"]  Data2D=[0]  Data2DPosy=[0]  H=[0.0147224]  MassBound=[0.000614125]  MassFluid=[0.000614125]
+
+Mk size: 1 bytes
+Case limits: (-0.05,-0.05,-0.05) - (2,1,1)
+Distance between points: 0.0085
+Case domain: (0,0,0)-(240,122,122)
+Domain points: 241 x 123 x 123 = 3646089
+Case parts: 1 x 123z
+Memory: 0.00Gb 3.48Mb (3646089)
+
+> MAIN
+FileShapes> Box_Dp.vtk  shapes:5  points:8   (time:0.001s)
+FileShapes> Building_Dp.vtk  shapes:6  points:12   (time:0.001s)
+<MAIN (Operations= 9+5+2 = 16)
+
+Triangles: 54 (0 ignored)
+[Draw-End  time:0.015s]
+
+[LoadsXMLConfig]
+Execution parameters.
+Initials configuration.
+Floating bodies configuration.
+Properties configuration.
+Predefined motion configuration.
+[LoadsXMLConfig-End  time:0.003s]
+
+[PreparePoints]
+Computing Vtk-Cells data...  (time:0.037s)
+BitSizeTot: 23 (2 + 8+7+6)
+Points loaded: 171496
+Sorting points by Z...
+Sorting points by Mk...
+
+List of Points:
+Points -> Fixed-Boundary particles:
+  block[  0] (mk: 10):  39993  -->   39993
+  block[  1] (mk: 11):   2383  -->    2383
+  block[  2] (mk: 20):    810  -->     810
+Points -> Fluid particles:
+  block[  3] (mk:  1): 128310  -->  128310
+
+Particle summary:
+  Fixed....: 43186  id:(0-43185)   MKs:3 (10-11,20)
+  Moving...: 0
+  Floating.: 0
+  Fluid....: 128310  id:(43186-171495)   MKs:1 (1)
+
+Total particles: 171496 (bound=43186 (fx=43186 mv=0 ft=0) fluid=128310)
+Total MK blocks: 4 (bound=3 (fx=3 mv=0 ft=0) fluid=1)
+
+Maximum depth: 0.289 (automatic)
+Speed of system: 1.68377 (automatic)
+Speed of sound: max(coefsound*speedsystem,10*sqrt(g*depth))
+Speed of sound: 33.6755 max(33.6755,16.8377)
+Speed of sound: 33.6755 (automatic)
+
+Coefh:1.000000 (hdp:1.732051)
+
+[PreparePoints-End  time:0.065s]
+
+[SaveCase3D]
+CaseDambreak_out/CaseDambreak_MkCells.vtk  (time:0.001s, shapes:50, points:200)
+CaseDambreak_out/CaseDambreak.bi4<double>  (time:0.018s)
+CaseDambreak_out/CaseDambreak_All.vtk  (time: 0.024s)
+CaseDambreak_out/CaseDambreak_Bound.vtk  (time: 0.006s)
+CaseDambreak_out/CaseDambreak_Fluid.vtk  (time: 0.018s)
+CaseDambreak_out/CaseDambreak.xml  (time:0.011s)
+
+Save files time: 0.078s
+
+Particle limits:
+  X range: 0.001 to 1.599 [m]
+  Y range: 0.001 to 0.6725 [m]
+  Z range: 0.001 to 0.4515 [m]
+
+[SaveCase3D-End  time:0.095s]
+
+
+Finished execution (code=0).
+
